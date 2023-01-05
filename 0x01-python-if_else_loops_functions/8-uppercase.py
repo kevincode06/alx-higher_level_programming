@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-# Author - Kevin Malou
+uppercase = __import__('8-uppercase.py').uppercase
 
-def uppercase(str):
-"""Print a string in uppercase."""
-for c in str:
-    if ord(c) >= 97 and ord(c) <= 122:
-        c = chr(ord(c) - 32)
-    print("{}".format(c), end="")
-    print("")
+uppercase("best")
+uppercase("Best school 98 Battery street")
